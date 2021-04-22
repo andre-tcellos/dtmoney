@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
         --text-body: #969cb3;
         --background: #f0f2f5;
         --shape: #fff;
+        --border-button: #d7d7d7;
+        --background-color-button: #e7e9ee;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,6 +23,11 @@ export const GlobalStyle = createGlobalStyle`
     body { background-color: var(--background-color); -webkit-font-smoothing: antialiased; }
     body, input, textarea, button { font-family: 'Poppins', sans-serif; font-weight: 400; }
     h1, h2, h3, h4, h5, h6, strong, b { font-weight: 600; }
-    button { cursor: pointer; }
+    button { cursor: pointer; border: 0; background: none; }
     [disabled] { opacity: .6; cursor: not-allowed; }
+    .react-modal-overlay { background-color: rgba(0, 0, 0, .5); position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center; justify-content: center; }
+    .react-modal-content { width: 100%; max-width: 576px; background-color: var(--background-color); padding: 3rem; position: relative; border-radius: .25rem; }
+    .react-modal-close { position: absolute; top: 1.5rem; right: 1.5rem; transition: filter .2s;
+        &:hover { filter: brightness(.8) }
+    }
 `;

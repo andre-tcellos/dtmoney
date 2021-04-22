@@ -14,8 +14,10 @@ export const Container = styled.div`
         color: var(--text-title);
 
         &:last-of-type {
-            background-color: var(--green);
             color: #fff;
+
+            &.positivo { background-color: var(--green); }
+            &.negativo { background-color: var(--red); }
         }
 
         header {

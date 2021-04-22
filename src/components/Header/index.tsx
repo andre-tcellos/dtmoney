@@ -1,10 +1,15 @@
+// Imagens
 import logoImg from '../../assets/logo.svg';
+
+// CSSs
 import { Container, Content } from './styles';
 
+// Interfaces
 interface HeaderProps {
     onOpenNewTransactionModal: () => void;
 };
 
+// Functions
 export function Header({onOpenNewTransactionModal}: HeaderProps) {
     return (
         <Container>
